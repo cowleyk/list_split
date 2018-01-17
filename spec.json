@@ -1,40 +1,34 @@
 {
-  "namespace/BlockName": {
-    "version": "1.0.0",
-    "description": "Description of the block.",
+  "nio/ListSplit": {
+    "version": "0.1.0",
+    "description": "The ListSplit block takes an incoming signal containing a list and splits that list into individual signals per element.",
+    "categories": [
+      "Signal Modifier"
+    ],
     "properties": {
-      "<property1>": {
-        "description": "Required description of the property"
+      "dict_att": {
+        "title": "Attribute Name",
+        "type": "StringType",
+        "description": "Name of the attribute the list element is assigned to on the outgoing signal.",
+        "default": "Attr"
       },
-      "<property2>": {
-        "default": "Optional metadata with any key.",
-        "description": "Required description of the property"
+      "list_att": {
+        "title": "List",
+        "type": "Type",
+        "description": "The signal attribute containing the list to be split on the incoming signal.",
+        "default": []
       }
     },
     "inputs": {
-      "<input1 | default>": {
-        "description": "Required description of the input"
-      },
-      "<input2>": {
-        "description": "Required description of the input"
+      "default": {
+        "description": "Any list of signals containing a list."
       }
     },
     "outputs": {
-      "<output1 | default>": {
-        "description": "Required description of the output"
-      },
-      "<output2>": {
-        "description": "Required description of the output"
+      "default": {
+        "description": "A signal per list element on the incoming signal."
       }
     },
-    "commands": {
-      "<command1>": {
-        "description": "Required description of the command",
-        "type": "Optional type and other metadata with any key."
-      },
-      "<command2>": {
-        "description": "Required description of the command"
-      }
-    }
+    "commands": {}
   }
 }

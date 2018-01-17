@@ -1,7 +1,7 @@
 {
-  "namespace/BlockName": {
+  "nio/ListSplit": {
     "language": "Python",
-    "version": "0.0.1",
-    "reference": "github.com/<organization>/<repo>@v0.0.1"
+    "url": "git://github.com/cowleyk/list_split.git",
+    "version": "0.1.0"
   }
 }

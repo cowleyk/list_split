@@ -1,24 +1,28 @@
-Example
-===========
-
-What does this block do?
+ListSplit
+=========
+The ListSplit block takes an incoming signal containing a list and splits that list into individual signals per element.
 
 Properties
---------------
-None
+----------
+- **dict_att**: Name of the attribute the list element is assigned to on the outgoing signal.
+- **list_att**: The signal attribute containing the list to be split on the incoming signal.
 
-Dependencies
-----------------
-None
+Inputs
+------
+- **default**: Any list of signals containing a list.
+
+Outputs
+-------
+- **default**: A signal per list element on the incoming signal.
 
 Commands
-----------------
+--------
 None
 
-Input
+Example
 -------
-Any list of signals.
+`incoming_signal = {"List": [1, 2, 3]}`  
+`outgoing_signal_1 = {"Attr": 1}`  
+`outgoing_signal_2 = {"Attr": 2}`  
+`outgoing_signal_3 = {"Attr": 3}`  
 
-Output
----------
-Same list of signals as input.
